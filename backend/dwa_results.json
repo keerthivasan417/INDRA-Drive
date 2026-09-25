@@ -1,0 +1,11 @@
+{
+  "planner": "Dynamic Window Approach (DWA)",
+  "goal_reached": true,
+  "collision_free": true,
+  "final_distance_to_goal": 0.48407006095114163,
+  "minimum_obstacle_clearance": 1.200975610935124,
+  "path_length": 13.762729946374895,
+  "simulation_steps": 203,
+  "time_step": 0.1,
+  "prediction_horizon": 4.5
+}

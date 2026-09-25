@@ -1,0 +1,11 @@
+{
+  "controller": "Model Predictive Control (MPC)",
+  "goal_reached": true,
+  "collision_free": true,
+  "final_distance_to_goal": 0.44376753537811786,
+  "minimum_obstacle_clearance": 0.7755436713868016,
+  "path_length": 13.408873880149143,
+  "simulation_steps": 96,
+  "horizon": 10,
+  "time_step": 0.1
+}

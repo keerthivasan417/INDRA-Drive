@@ -1,0 +1,16 @@
+{
+  "model": "TrajectoryLSTM",
+  "input_frames": 8,
+  "prediction_frames": 5,
+  "input_features": 2,
+  "hidden_size": 64,
+  "num_layers": 2,
+  "parameters": 51338,
+  "training_tracks": 50,
+  "validation_tracks": 13,
+  "training_sequences": 176,
+  "validation_sequences": 56,
+  "best_validation_loss": 0.0005568118367591524,
+  "ADE_normalized": 0.024637794122099876,
+  "FDE_normalized": 0.03248562663793564
+}

@@ -1,0 +1,14 @@
+{
+  "planner": "Risk-Aware DWA",
+  "goal_reached": true,
+  "collision_free": true,
+  "safety_margin": 0.25,
+  "minimum_obstacle_clearance": 0.2501104546110976,
+  "final_distance_to_goal": 0.4634044084893165,
+  "path_length": 12.847674613759999,
+  "simulation_steps": 145,
+  "risk_levels_observed": [
+    "LOW",
+    "MEDIUM"
+  ]
+}

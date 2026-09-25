@@ -1,0 +1,13 @@
+{
+  "epoch": 12,
+  "batch_size": 2,
+  "learning_rate": 5e-05,
+  "weight_decay": 0.0001,
+  "max_grad_norm": 0.1,
+  "avg_train_loss": 6.269609161376954,
+  "avg_val_loss": 6.154617103338242,
+  "train_batches": 1500,
+  "val_batches": 400,
+  "precision": "FP32",
+  "source_checkpoint": "/content/drive/MyDrive/INDRA-Drive/checkpoints/rtdetr_v2_r18_uvh26_phase2/epoch11"
+}

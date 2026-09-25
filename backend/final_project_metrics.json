@@ -1,0 +1,66 @@
+{
+  "project": "Adaptive Path Planning and Collision Avoidance for Autonomous Vehicles on Unstructured Indian Roads",
+  "perception": {
+    "model": "RT-DETRv2 R18",
+    "dataset": "UVH-26",
+    "train_images": 3000,
+    "train_annotations": 38881,
+    "validation_images": 800,
+    "validation_annotations": 11064,
+    "classes": 14,
+    "mAP_50_95": 0.353,
+    "mAP_50": 0.4347,
+    "mAP_75": 0.3925,
+    "mAR_100": 0.7385,
+    "checkpoint": "epoch12"
+  },
+  "tracking": {
+    "tracker": "ByteTrack",
+    "tracks_created_in_test": 50,
+    "valid_trajectories": 38
+  },
+  "trajectory_prediction": {
+    "model": "LSTM",
+    "input_frames": 8,
+    "prediction_frames": 5,
+    "training_sequences": 176,
+    "validation_sequences": 56,
+    "ADE_normalized": 0.02730264887213707,
+    "FDE_normalized": 0.03323051333427429,
+    "fresh_inference_sequences": 232,
+    "fresh_inference_ADE_normalized": 0.034195,
+    "fresh_inference_FDE_normalized": 0.037377
+  },
+  "risk_estimation": {
+    "method": "TTC-based risk estimation",
+    "risk_levels": [
+      "LOW",
+      "MEDIUM",
+      "HIGH",
+      "CRITICAL"
+    ]
+  },
+  "planning": {
+    "risk_aware_dwa": {
+      "goal_reached": true,
+      "collision_free": true,
+      "minimum_clearance": 0.2501104546110976,
+      "path_length": 12.847674613759999
+    },
+    "mpc": {
+      "goal_reached": true,
+      "collision_free": true,
+      "minimum_clearance": 0.7755436713868016,
+      "path_length": 13.408873880149143
+    },
+    "integrated": {
+      "goal_reached": true,
+      "collision_free": true,
+      "safety_margin_satisfied": true,
+      "final_distance": 0.4138147042403849,
+      "minimum_clearance": 0.7335007449910754,
+      "path_length": 13.21172263429074,
+      "maximum_risk_speed_excess": 0.08018422664899649
+    }
+  }
+}
